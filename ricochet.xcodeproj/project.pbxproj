@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F39440F197B3C7DA76A60AA /* Pods_ricochet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0239E6CA60D241E0F6D723F3 /* Pods_ricochet.framework */; };
+		DF9D40211D090D83001C0BE9 /* Ricochet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9D40201D090D83001C0BE9 /* Ricochet.swift */; };
 		DFAC6B551D090BDF00C71EB5 /* ricochet.h in Headers */ = {isa = PBXBuildFile; fileRef = DFAC6B541D090BDF00C71EB5 /* ricochet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFAC6B5C1D090BDF00C71EB5 /* ricochet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAC6B511D090BDF00C71EB5 /* ricochet.framework */; };
 		DFAC6B611D090BE000C71EB5 /* ricochetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC6B601D090BE000C71EB5 /* ricochetTests.swift */; };
+		FD1451D39A9C55B57EF5438B /* Pods_ricochetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A32A50D2DB06D7B57725CC /* Pods_ricochetTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0239E6CA60D241E0F6D723F3 /* Pods_ricochet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ricochet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		113E3803EEDAA4C2C78130E9 /* Pods-ricochetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ricochetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ricochetTests/Pods-ricochetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		680E1DAB020ECB16BC1748D0 /* Pods-ricochet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ricochet.release.xcconfig"; path = "Pods/Target Support Files/Pods-ricochet/Pods-ricochet.release.xcconfig"; sourceTree = "<group>"; };
+		76A32A50D2DB06D7B57725CC /* Pods_ricochetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ricochetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA9AA8C750409FA3813FBA7 /* Pods-ricochet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ricochet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ricochet/Pods-ricochet.debug.xcconfig"; sourceTree = "<group>"; };
+		DF9D40201D090D83001C0BE9 /* Ricochet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ricochet.swift; sourceTree = "<group>"; };
 		DFAC6B511D090BDF00C71EB5 /* ricochet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ricochet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC6B541D090BDF00C71EB5 /* ricochet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ricochet.h; sourceTree = "<group>"; };
 		DFAC6B561D090BDF00C71EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFAC6B5B1D090BDF00C71EB5 /* ricochetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricochetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC6B601D090BE000C71EB5 /* ricochetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricochetTests.swift; sourceTree = "<group>"; };
 		DFAC6B621D090BE000C71EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C6D8CF704CEE320AD44C93 /* Pods-ricochetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ricochetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ricochetTests/Pods-ricochetTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F39440F197B3C7DA76A60AA /* Pods_ricochet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +55,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFAC6B5C1D090BDF00C71EB5 /* ricochet.framework in Frameworks */,
+				FD1451D39A9C55B57EF5438B /* Pods_ricochetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B25F65348E8FF8786996EE89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA9AA8C750409FA3813FBA7 /* Pods-ricochet.debug.xcconfig */,
+				680E1DAB020ECB16BC1748D0 /* Pods-ricochet.release.xcconfig */,
+				113E3803EEDAA4C2C78130E9 /* Pods-ricochetTests.debug.xcconfig */,
+				E9C6D8CF704CEE320AD44C93 /* Pods-ricochetTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDCCFE027F5352CCE061602C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0239E6CA60D241E0F6D723F3 /* Pods_ricochet.framework */,
+				76A32A50D2DB06D7B57725CC /* Pods_ricochetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DFAC6B471D090BDF00C71EB5 = {
 			isa = PBXGroup;
 			children = (
 				DFAC6B531D090BDF00C71EB5 /* ricochet */,
 				DFAC6B5F1D090BE000C71EB5 /* ricochetTests */,
 				DFAC6B521D090BDF00C71EB5 /* Products */,
+				B25F65348E8FF8786996EE89 /* Pods */,
+				CDCCFE027F5352CCE061602C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +105,7 @@
 		DFAC6B531D090BDF00C71EB5 /* ricochet */ = {
 			isa = PBXGroup;
 			children = (
+				DF9D40201D090D83001C0BE9 /* Ricochet.swift */,
 				DFAC6B541D090BDF00C71EB5 /* ricochet.h */,
 				DFAC6B561D090BDF00C71EB5 /* Info.plist */,
 			);
@@ -104,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFAC6B651D090BE000C71EB5 /* Build configuration list for PBXNativeTarget "ricochet" */;
 			buildPhases = (
+				C98896ABA0030B530D4797A9 /* Check Pods Manifest.lock */,
 				DFAC6B4C1D090BDF00C71EB5 /* Sources */,
 				DFAC6B4D1D090BDF00C71EB5 /* Frameworks */,
 				DFAC6B4E1D090BDF00C71EB5 /* Headers */,
 				DFAC6B4F1D090BDF00C71EB5 /* Resources */,
+				6911DCBAA4D214B013C7F14A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFAC6B681D090BE000C71EB5 /* Build configuration list for PBXNativeTarget "ricochetTests" */;
 			buildPhases = (
+				094FA1633CEA7AF420801DB1 /* Check Pods Manifest.lock */,
 				DFAC6B571D090BDF00C71EB5 /* Sources */,
 				DFAC6B581D090BDF00C71EB5 /* Frameworks */,
 				DFAC6B591D090BDF00C71EB5 /* Resources */,
+				34987D2C8EF15D86D2C0F41D /* Embed Pods Frameworks */,
+				41E321C49B26CD8AF347C083 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,11 +229,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		094FA1633CEA7AF420801DB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34987D2C8EF15D86D2C0F41D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ricochetTests/Pods-ricochetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41E321C49B26CD8AF347C083 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ricochetTests/Pods-ricochetTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6911DCBAA4D214B013C7F14A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ricochet/Pods-ricochet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98896ABA0030B530D4797A9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFAC6B4C1D090BDF00C71EB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9D40211D090D83001C0BE9 /* Ricochet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +428,7 @@
 		};
 		DFAC6B661D090BE000C71EB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA9AA8C750409FA3813FBA7 /* Pods-ricochet.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -325,6 +445,7 @@
 		};
 		DFAC6B671D090BE000C71EB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680E1DAB020ECB16BC1748D0 /* Pods-ricochet.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -341,6 +462,7 @@
 		};
 		DFAC6B691D090BE000C71EB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 113E3803EEDAA4C2C78130E9 /* Pods-ricochetTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ricochetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -351,6 +473,7 @@
 		};
 		DFAC6B6A1D090BE000C71EB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C6D8CF704CEE320AD44C93 /* Pods-ricochetTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ricochetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -378,6 +501,7 @@
 				DFAC6B671D090BE000C71EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFAC6B681D090BE000C71EB5 /* Build configuration list for PBXNativeTarget "ricochetTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +510,7 @@
 				DFAC6B6A1D090BE000C71EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

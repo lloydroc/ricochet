@@ -1,0 +1,6 @@
+framework module Pods_ricochet {
+  umbrella header "Pods-ricochet-umbrella.h"
+
+  export *
+  module * { export * }
+}

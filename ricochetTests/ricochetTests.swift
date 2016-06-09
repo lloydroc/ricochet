@@ -7,30 +7,86 @@
 //
 
 import XCTest
+import SwiftyJSON
+
 @testable import ricochet
 
 class ricochetTests: XCTestCase {
+    var theExpectation:XCTestExpectation?
+    var url = "http://localhost/testjson.php"
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testPost() {
+        theExpectation = expectationWithDescription("initialized")
+        
+        func myCallback(json: JSON?,data: NSData?, response: NSHTTPURLResponse?, error: NSError?) {
+            theExpectation?.fulfill() // it will release our "timer"
+            XCTAssertTrue(error == nil)
+            XCTAssertTrue(response?.statusCode>199 && response?.statusCode<300)
         }
+        
+        Ricochet().post(url, json: nil).request(myCallback)
+        waitForExpectationsWithTimeout(20, handler: { error in XCTAssertNil(error, "Timeout on url \(self.url)")})
     }
     
+    func testGet() {
+        theExpectation = expectationWithDescription("initialized")
+        
+        func myCallback(json: JSON?,data: NSData?, response: NSHTTPURLResponse?, error: NSError?) {
+            theExpectation?.fulfill() // it will release our "timer"
+            XCTAssertTrue(error == nil)
+            XCTAssertTrue(response?.statusCode>199 && response?.statusCode<300)
+        }
+        
+        Ricochet().get(url).request(myCallback)
+        waitForExpectationsWithTimeout(20, handler: { error in XCTAssertNil(error, "Timeout on url \(self.url)")})
+    }
+    
+    func testGetWithParms() {
+        theExpectation = expectationWithDescription("initialized")
+        
+        func myCallback(json: JSON?,data: NSData?, response: NSHTTPURLResponse?, error: NSError?) {
+            theExpectation?.fulfill() // it will release our "timer"
+            XCTAssertTrue(error == nil)
+            XCTAssertTrue(response?.statusCode>199 && response?.statusCode<300)
+        }
+        
+        let q = ["a":"z","b":"y"]
+        Ricochet().get(url, queryParms: q).request(myCallback)
+        waitForExpectationsWithTimeout(20, handler: { error in XCTAssertNil(error, "Timeout on url \(self.url)")})
+    }
+    
+    func testDelete() {
+        theExpectation = expectationWithDescription("initialized")
+        
+        func myCallback(json: JSON?,data: NSData?, response: NSHTTPURLResponse?, error: NSError?) {
+            theExpectation?.fulfill() // it will release our "timer"
+            XCTAssertTrue(error == nil)
+            XCTAssertTrue(response?.statusCode>199 && response?.statusCode<300)
+        }
+        
+        let q = ["a":"z","b":"y"]
+        Ricochet().delete(url, queryParms: q).request(myCallback)
+        waitForExpectationsWithTimeout(20, handler: { error in XCTAssertNil(error, "Timeout on url \(self.url)")})
+    }
+    
+    func testDeleteWithParams() {
+        theExpectation = expectationWithDescription("initialized")
+        
+        func myCallback(json: JSON?,data: NSData?, response: NSHTTPURLResponse?, error: NSError?) {
+            theExpectation?.fulfill() // it will release our "timer"
+            XCTAssertTrue(error == nil)
+            XCTAssertTrue(response?.statusCode>199 && response?.statusCode<300)
+        }
+        
+        Ricochet().delete(url).request(myCallback)
+        waitForExpectationsWithTimeout(20, handler: { error in XCTAssertNil(error, "Timeout on url \(self.url)")})
+    }
 }
